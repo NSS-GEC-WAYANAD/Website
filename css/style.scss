@@ -254,3 +254,142 @@ footer{
     }
     */
 }
+
+@media screen and (max-width:1024px) {
+    nav{ 
+        position: absolute;
+        overflow: visible;
+        z-index: 2;    
+        #logo{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 1rem;
+            margin-right: auto;
+            #nss_logo{
+                width: 2rem;
+                height: auto;
+            }
+            #logo_text{
+                margin: 0rem 0.5rem;
+                width: auto;
+                h1{
+                    font-size: 0.8rem;
+                    color: #272727;
+                    font-family: $font1;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                p{
+                    font-size: 0.6rem;
+                    color: #4b4b4b;
+                    font-family: $font1;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+        #nav_bg{
+            position: absolute;
+            background-color: rgba($color: #000, $alpha: 0.7);
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            transform: translateX(-100%);
+        }
+        #nav_links{
+            position: absolute;
+            background-color: $color5;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+            transform: translateX(-100%);
+            li{
+                list-style: none;
+                text-decoration: none;
+                margin: 0.5rem;
+                width: 80%;
+                background: $color5;
+                .nav-active{
+                    background-color: $color1;
+                    color: $color5;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 3.5rem;
+                    padding: 0.5rem;
+                    background-color: $color4;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-family: $font1;
+                    font-weight: 500;
+                    color: $color1;
+                    overflow: hidden;
+    
+                    &::after {
+                        display: none;
+                    }
+    
+                    &:hover{
+                        color: $color5;
+                        background-color: $color1;
+                    }
+                }
+            }
+            transition: all 0.5s ease;
+        }
+        #hamburger{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            pointer-events: all;
+            width: 3rem;
+            height: 2rem;
+            position: absolute;
+            right: 1.5rem;
+            top: 1rem;
+            z-index: 5;
+            .hamburger_line{
+                margin: auto;
+                height: 0.22rem;
+                width: 2.2em;
+                background-color: $color5;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        #hamburger.open{
+            .hamburger_line{
+                background-color: $color1;
+            }
+            .hamburger_line:nth-child(1){
+                height: 0.2rem;
+                transform: translateY(320%) rotate(45deg);
+            }
+            .hamburger_line:nth-child(2){
+                background-color: transparent;
+            }
+            .hamburger_line:nth-child(3){
+                height: 0.2rem;
+                transform: translateY(-320%) rotate(-45deg);
+            }
+        }
+        #nav_bg.open{
+            transform: translateX(0);
+        }
+        #nav_links.open{
+            transform: translateX(0);
+        }
+    }
+}
+
+@import './scss/home'

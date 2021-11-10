@@ -299,4 +299,167 @@ footer #made_by {
   font-size: 0.8rem;
   margin: auto;
 }
+
+@media screen and (max-width: 1024px) {
+  nav {
+    position: absolute;
+    overflow: visible;
+    z-index: 2;
+  }
+  nav #logo {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0rem 1rem;
+    margin-right: auto;
+  }
+  nav #logo #nss_logo {
+    width: 2rem;
+    height: auto;
+  }
+  nav #logo #logo_text {
+    margin: 0rem 0.5rem;
+    width: auto;
+  }
+  nav #logo #logo_text h1 {
+    font-size: 0.8rem;
+    color: #272727;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0;
+  }
+  nav #logo #logo_text p {
+    font-size: 0.6rem;
+    color: #4b4b4b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0;
+  }
+  nav #nav_bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  nav #nav_links {
+    position: absolute;
+    background-color: #000249;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 75%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 1;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  nav #nav_links li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    width: 80%;
+    background: #000249;
+  }
+  nav #nav_links li .nav-active {
+    background-color: #f6f6f6;
+    color: #000249;
+  }
+  nav #nav_links li a {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem;
+    background-color: #0f4392;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #f6f6f6;
+    overflow: hidden;
+  }
+  nav #nav_links li a::after {
+    display: none;
+  }
+  nav #nav_links li a:hover {
+    color: #000249;
+    background-color: #f6f6f6;
+  }
+  nav #hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    pointer-events: all;
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    z-index: 5;
+  }
+  nav #hamburger .hamburger_line {
+    margin: auto;
+    height: 0.22rem;
+    width: 2.2em;
+    background-color: #000249;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  nav #hamburger.open .hamburger_line {
+    background-color: #f6f6f6;
+  }
+  nav #hamburger.open .hamburger_line:nth-child(1) {
+    height: 0.2rem;
+    -webkit-transform: translateY(320%) rotate(45deg);
+            transform: translateY(320%) rotate(45deg);
+  }
+  nav #hamburger.open .hamburger_line:nth-child(2) {
+    background-color: transparent;
+  }
+  nav #hamburger.open .hamburger_line:nth-child(3) {
+    height: 0.2rem;
+    -webkit-transform: translateY(-320%) rotate(-45deg);
+            transform: translateY(-320%) rotate(-45deg);
+  }
+  nav #nav_bg.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  nav #nav_links.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
