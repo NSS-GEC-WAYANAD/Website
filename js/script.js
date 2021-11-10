@@ -14,6 +14,8 @@ document.querySelectorAll('a[href^="#btn"]').forEach(anchor => {
 
 hamburger.addEventListener("click", () => {
     nav_bg.classList.toggle("open");
-    nav_links.classList.toggle("open");
-    hamburger.classList.toggle("open");
+    setTimeout(function() {
+        nav_links.classList.toggle("open");
+        hamburger.classList.toggle("open");
+    }, 100);
 });
