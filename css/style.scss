@@ -1,9 +1,256 @@
+@import './scss/theme';
+
 *{
     margin: 0;
     border: 0;
     box-sizing: border-box;
+
+    &::selection{
+        background: rgba($color: #000, $alpha: 0.5);
+    }
 }
 
+html{
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: $font2;
+
+    font-size: 13px;
+
+    @media screen and (min-width: 900px) {
+        font-size: 16px;
+    }
+          
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
+
 body{
-    background-color: #f6f6f6;
+    background-color: $color1;
+}
+
+nav{
+    min-height: 1rem;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color2;
+    box-shadow: 0px 2.7px 2.2px rgba(0, 0, 0, 0.02),
+                0px 6.6px 5.3px rgba(0, 0, 0, 0.028),
+                0px 12.4px 10px rgba(0, 0, 0, 0.035),
+                0px 22.1px 17.9px rgba(0, 0, 0, 0.042),
+                0px 41.4px 33.4px rgba(0, 0, 0, 0.05),
+                0px 99px 80px rgba(0, 0, 0, 0.07);
+    
+    #logo{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1rem;
+        margin-right: auto;
+        #nss_logo{
+            width: 2rem;
+            height: auto;
+        }
+        #logo_text{
+            margin: 0rem 0.5rem;
+            width: auto;
+            h1{
+                font-size: 0.8rem;
+                color: #272727;
+                font-family: $font1;
+                font-weight: 600;
+                margin: 0;
+            }
+            p{
+                font-size: 0.6rem;
+                color: #4b4b4b;
+                font-family: $font1;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+    }
+
+    #nav_links{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        height: 1rem;
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            list-style: none;
+            text-decoration: none;
+            padding: 0rem 1.5rem;
+            .nav-active{
+                color: $color5;
+            }
+            a{
+                display: block;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 1rem;
+                font-family: $font3;
+                font-weight: 600;
+                color: rgba($color: $color4, $alpha: 0.5);
+                //transform: translate(0,0%);
+                transition: all 0.4s ease-in-out;
+                overflow: hidden;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    transform: translateX(101%);
+                    height: 0.15rem;
+                    display: block;
+                    background: $color5;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover{
+                    color: $color5;
+                }
+
+                &:hover::after {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+footer{
+    position: relative;
+    background: $color5;
+    min-height: 10rem;
+    //padding: 1rem;
+
+    .fm{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .footer_box{
+            //background-color: $color3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1.5rem;
+            
+            .text{
+                color: $color1;
+                width: auto;
+                font-size:  $font3;
+            }
+
+            .sm{
+                .sm-btn{
+                    color: $color1;
+                    background-color: transparent;
+                    margin: 0rem 0.7rem;
+                    border: none;
+                    font-size: 2rem;
+    
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover{
+                        color: $color3;
+                    }
+                }
+
+            }
+            
+        }
+    }
+    #cop{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: $color4;
+        padding: 1rem;
+
+        box-shadow:
+            0px 0px 3.2px rgba(0, 0, 0, 0.041),
+            0px 0px 8.9px rgba(0, 0, 0, 0.104),
+            0px 0px 21.4px rgba(0, 0, 0, 0.188),
+            0px 0px 71px rgba(0, 0, 0, 0.35);
+
+        #btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            color: $color1;
+            width: 2.5rem;
+            height: 2.5rem;
+
+            left: 50%;
+            top: 0;
+            border: none;
+            background-color: $color4;
+            font-size: 2rem;
+            //padding: 0.5rem;
+            border-radius: 2.5rem;
+            transform: translate(-50%,-50%);
+
+            a{
+                direction: none;
+                text-decoration: none;
+            }
+        }
+    }
+    #made_by{
+        text-align: center;
+        width: 100%;
+        box-align: center;
+        color: $color1;
+        font-family: $font2;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+    /*
+    #copyright{
+        text-align: center;
+        width: 100%;
+        color: rgba($color: $color1, $alpha: 0.5);
+        font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+    */
 }

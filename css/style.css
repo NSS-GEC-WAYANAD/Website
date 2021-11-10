@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   border: 0;
@@ -5,7 +6,297 @@
           box-sizing: border-box;
 }
 
+*::-moz-selection {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+*::selection {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+html {
+  overflow: auto;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: #f6f6f6;
+}
+
+nav {
+  min-height: 1rem;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f9ff;
+  -webkit-box-shadow: 0px 2.7px 2.2px rgba(0, 0, 0, 0.02), 0px 6.6px 5.3px rgba(0, 0, 0, 0.028), 0px 12.4px 10px rgba(0, 0, 0, 0.035), 0px 22.1px 17.9px rgba(0, 0, 0, 0.042), 0px 41.4px 33.4px rgba(0, 0, 0, 0.05), 0px 99px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2.7px 2.2px rgba(0, 0, 0, 0.02), 0px 6.6px 5.3px rgba(0, 0, 0, 0.028), 0px 12.4px 10px rgba(0, 0, 0, 0.035), 0px 22.1px 17.9px rgba(0, 0, 0, 0.042), 0px 41.4px 33.4px rgba(0, 0, 0, 0.05), 0px 99px 80px rgba(0, 0, 0, 0.07);
+}
+
+nav #logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 1rem;
+  margin-right: auto;
+}
+
+nav #logo #nss_logo {
+  width: 2rem;
+  height: auto;
+}
+
+nav #logo #logo_text {
+  margin: 0rem 0.5rem;
+  width: auto;
+}
+
+nav #logo #logo_text h1 {
+  font-size: 0.8rem;
+  color: #272727;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav #logo #logo_text p {
+  font-size: 0.6rem;
+  color: #4b4b4b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav #nav_links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 1rem;
+}
+
+nav #nav_links li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  padding: 0rem 1.5rem;
+}
+
+nav #nav_links li .nav-active {
+  color: #000249;
+}
+
+nav #nav_links li a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgba(15, 67, 146, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+nav #nav_links li a::after {
+  content: '';
+  width: 100%;
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
+  height: 0.15rem;
+  display: block;
+  background: #000249;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav #nav_links li a:hover {
+  color: #000249;
+}
+
+nav #nav_links li a:hover::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+footer {
+  position: relative;
+  background: #000249;
+  min-height: 10rem;
+  /*
+    #copyright{
+        text-align: center;
+        width: 100%;
+        color: rgba($color: $color1, $alpha: 0.5);
+        font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+    */
+}
+
+footer .fm {
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+footer .fm .footer_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+}
+
+footer .fm .footer_box .text {
+  color: #f6f6f6;
+  width: auto;
+  font-size: "Poppins", sans-serif;
+}
+
+footer .fm .footer_box .sm .sm-btn {
+  color: #f6f6f6;
+  background-color: transparent;
+  margin: 0rem 0.7rem;
+  border: none;
+  font-size: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .fm .footer_box .sm .sm-btn:hover {
+  color: #1d9bf0;
+}
+
+footer #cop {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f4392;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 3.2px rgba(0, 0, 0, 0.041), 0px 0px 8.9px rgba(0, 0, 0, 0.104), 0px 0px 21.4px rgba(0, 0, 0, 0.188), 0px 0px 71px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 3.2px rgba(0, 0, 0, 0.041), 0px 0px 8.9px rgba(0, 0, 0, 0.104), 0px 0px 21.4px rgba(0, 0, 0, 0.188), 0px 0px 71px rgba(0, 0, 0, 0.35);
+}
+
+footer #cop #btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: #f6f6f6;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 50%;
+  top: 0;
+  border: none;
+  background-color: #0f4392;
+  font-size: 2rem;
+  border-radius: 2.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer #cop #btn a {
+  direction: none;
+  text-decoration: none;
+}
+
+footer #made_by {
+  text-align: center;
+  width: 100%;
+  box-align: center;
+  color: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
