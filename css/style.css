@@ -939,15 +939,20 @@ footer #made_by {
 }
 
 #highlights .head h1 {
-  font-size: 1.5rem;
   color: #ff4949;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 #highlights .head p {
   margin: 0;
   padding: 0;
   color: #000249;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 #highlights .img_boxes {
