@@ -112,11 +112,123 @@
         transform: translateY(-16%);
     }
 }
+.more{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    #smore{
+        background: transparent;
+        font-size: 1rem;
+        font-family: $font1;
+        font-weight: 600;
+        color: $color6;
+        border: 2px solid $color6;
+        border-radius: 0.2rem;
+        padding: 0.3rem 1rem;
+        transition: all 0.3s ease;
 
+        &:hover{
+            background-color: $color6;
+            color: $color2;
+        }
+    }
+}
 #s1{
     position: relative;
     min-height: 50vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .space{
+        height: 10vh;
+        width: 100%;
+    }
+    h2{
+        color: $color6;
+        font-family: $font2;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+    p{
+        font-size: 0.9rem;
+        font-family: $font3;
+        color: $color5;
+        text-align: justify;
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        width: 80%;
 
+        .about_us{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0rem 2rem;
+        }
+    }
+    #mav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem 0rem;
+        .svg-mv{
+            width: 13rem;
+            height: auto;
+        }
+        .mv-box{
+            position: relative;
+            margin: 2rem;
+            padding: 1rem 2rem;
+            background-color: rgba($color: $color3, $alpha: 0.2);
     
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0.4rem;
+                height: 100%;
+                background-color: $color5;
+            }
+            box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004),
+                        2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007),
+                        4.4px 4.4px 10px rgba(0, 0, 0, 0.009),
+                        7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011),
+                        14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014),
+                        35px 35px 80px rgba(0, 0, 0, 0.02);
+        }
+        .mv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    #s1{
+        .svg-mv{
+            display: none;
+        }
+        #mission{
+            width: 90%;
+        }
+    }
 }
