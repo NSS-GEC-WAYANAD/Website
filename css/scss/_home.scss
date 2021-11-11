@@ -135,6 +135,12 @@
         }
     }
 }
+
+.space{
+    height: 7vh;
+    width: 100%;
+}
+
 #s1{
     position: relative;
     min-height: 50vh;
@@ -143,10 +149,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .space{
-        height: 10vh;
-        width: 100%;
-    }
     h2{
         color: $color6;
         font-family: $font2;
@@ -219,7 +221,30 @@
     }
 }
 
-
+#nss_sts{
+    background-color: $color5;
+    padding: 2rem 0;
+    pointer-events: all;
+    .status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        h1{
+            font-size: 3rem;
+            color: $color2;
+            font-family: $font3;
+            margin: 0;
+        }
+        h4{
+            color:rgba($color: $color1, $alpha: 0.6);
+            font-family: $font1;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
 
 
 @media screen and (max-width:1024px) {

@@ -627,6 +627,11 @@ footer #made_by {
   color: #f5f9ff;
 }
 
+.space {
+  height: 7vh;
+  width: 100%;
+}
+
 #s1 {
   position: relative;
   min-height: 50vh;
@@ -644,11 +649,6 @@ footer #made_by {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#s1 .space {
-  height: 10vh;
-  width: 100%;
 }
 
 #s1 h2 {
@@ -755,6 +755,43 @@ footer #made_by {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+}
+
+#nss_sts {
+  background-color: #000249;
+  padding: 2rem 0;
+  pointer-events: all;
+}
+
+#nss_sts .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+#nss_sts .status h1 {
+  font-size: 3rem;
+  color: #f5f9ff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+#nss_sts .status h4 {
+  color: rgba(246, 246, 246, 0.6);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
