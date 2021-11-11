@@ -45,7 +45,7 @@ html{
 } 
 
 body{
-    background-color: $color1;
+    background-color: $color2;
 }
 
 nav{
@@ -172,14 +172,14 @@ footer{
             padding: 1.5rem;
             
             .text{
-                color: $color1;
+                color: $color2;
                 width: auto;
                 font-size:  $font3;
             }
 
             .sm{
                 .sm-btn{
-                    color: $color1;
+                    color: $color2;
                     background-color: transparent;
                     margin: 0rem 0.7rem;
                     border: none;
@@ -215,7 +215,7 @@ footer{
             align-items: center;
 
             position: absolute;
-            color: $color1;
+            color: $color2;
             width: 2.5rem;
             height: 2.5rem;
 
@@ -238,7 +238,7 @@ footer{
         text-align: center;
         width: 100%;
         box-align: center;
-        color: $color1;
+        color: $color2;
         font-family: $font2;
         font-size: 0.8rem;
         margin: auto;
@@ -316,7 +316,7 @@ footer{
                 width: 95%;
                 background: $color5;
                 .nav-active{
-                    background-color: $color1;
+                    background-color: $color2;
                     color: $color5;
                 }
                 a{
@@ -329,7 +329,7 @@ footer{
                     font-size: 1.3rem;
                     font-family: $font1;
                     font-weight: 500;
-                    color: $color1;
+                    color: $color2;
                     overflow: hidden;
     
                     &::after {
@@ -338,7 +338,7 @@ footer{
     
                     &:hover{
                         color: $color5;
-                        background-color: $color1;
+                        background-color: $color2;
                     }
                 }
             }
@@ -367,7 +367,7 @@ footer{
         }
         #hamburger.open{
             .hamburger_line{
-                background-color: $color1;
+                background-color: $color2;
             }
             .hamburger_line:nth-child(1){
                 height: 0.2rem;
