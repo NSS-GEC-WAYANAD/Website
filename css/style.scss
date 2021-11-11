@@ -24,6 +24,8 @@ html{
     @media screen and (min-width: 1200px) {
         font-size: 18px;
     }
+
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -47,12 +49,10 @@ body{
 }
 
 nav{
-    min-height: 1rem;
+    height: 4rem;
     width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    padding: 1rem;
+    position: fixed;
+    //top: 0;
 
     display: flex;
     justify-content: center;
@@ -67,13 +67,12 @@ nav{
                 0px 22.1px 17.9px rgba(0, 0, 0, 0.042),
                 0px 41.4px 33.4px rgba(0, 0, 0, 0.05),
                 0px 99px 80px rgba(0, 0, 0, 0.07);
-    
     #logo{
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0rem 1rem;
+        padding: 1rem 1rem;
         margin-right: auto;
         #nss_logo{
             width: 2rem;
@@ -257,9 +256,7 @@ footer{
 }
 
 @media screen and (max-width:1024px) {
-    nav{ 
-        position: sticky;
-        z-index: 3;    
+    nav{    
         #logo{
             height: 100%;
             display: flex;
@@ -306,7 +303,7 @@ footer{
             left: 0;
             top: 0;
             height: 100vh;
-            width: 75%;
+            width: 80%;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -316,7 +313,7 @@ footer{
                 list-style: none;
                 text-decoration: none;
                 margin: 0.5rem;
-                width: 80%;
+                width: 95%;
                 background: $color5;
                 .nav-active{
                     background-color: $color1;
@@ -325,11 +322,11 @@ footer{
                 a{
                     display: block;
                     width: 100%;
-                    height: 3.5rem;
+                    height: 3rem;
                     padding: 0.5rem;
                     background-color: $color4;
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     font-family: $font1;
                     font-weight: 500;
                     color: $color1;
