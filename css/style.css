@@ -794,12 +794,129 @@ footer #made_by {
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+#latest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 4rem;
+  height: auto;
+}
+
+#latest h1 {
+  color: #ff4949;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#latest .lp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#latest .lp .hts_prg {
+  width: 100%;
+  height: auto;
+}
+
+#latest .lp .hts_prg .prgs {
+  width: 100%;
+  border-top: 2px solid #000249;
+  border-bottom: 2px solid #000249;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest .lp .hts_prg .prgs .prg_img {
+  margin: 1rem;
+  width: 20%;
+  height: 8rem;
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+#latest .lp .hts_prg .prgs .prg_img img {
+  height: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#latest .lp .hts_prg .prgs .prg_img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#latest .lp .hts_prg .prgs .prg_text {
+  padding: 1rem;
+}
+
+#latest .lp .hts_prg .prgs .prg_text h4 {
+  color: #000249;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#latest .lp .hts_prg .prgs .prg_text p {
+  color: #0f4392;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+
+@media screen and (max-width: 960px) {
   #s1 .svg-mv {
     display: none;
   }
   #s1 #mission {
     width: 90%;
+  }
+  #latest .lp .hts_prg .prgs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #latest .lp .hts_prg .prgs .prg_img {
+    width: 45vh;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

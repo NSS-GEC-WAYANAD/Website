@@ -246,14 +246,103 @@
     }
 }
 
+#latest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 4rem;
+    height: auto;
+    h1{
+        color: $color6;
+        font-family: $font2;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .lp{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .hts_prg{
+            width: 100%;
+            height: auto;
 
-@media screen and (max-width:1024px) {
+            .prgs{
+                width: 100%;
+                border-top: 2px solid $color5;
+                border-bottom: 2px solid $color5;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .prg_img{
+                    margin: 1rem;
+                    width: 20%;
+                    height: 8rem;
+                    display: block;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+                    img{
+                        height: 100%;
+                        transition: all 0.4s ease;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    
+                }
+                .prg_text{
+                    padding: 1rem;
+                    h4{
+                        color: $color5;
+                        font-family: $font2;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        color: $color4;
+                        font-family: $font3;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
     #s1{
         .svg-mv{
             display: none;
         }
         #mission{
             width: 90%;
+        }
+    }
+
+    #latest{
+        .lp{
+            .hts_prg{
+    
+                .prgs{
+                    flex-direction: column;
+    
+                    .prg_img{
+                        width: 45vh;
+                        height: 30vh;
+                    }
+                    .prg_text{
+                    }
+                }
+            }
         }
     }
 }
