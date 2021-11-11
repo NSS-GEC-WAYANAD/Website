@@ -268,7 +268,7 @@
         align-items: center;
         flex-direction: column;
         .hts_prg{
-            width: 100%;
+            width: 70%;
             height: auto;
 
             .prgs{
@@ -282,7 +282,7 @@
 
                 .prg_img{
                     margin: 1rem;
-                    width: 20%;
+                    width: 40%;
                     height: 8rem;
                     display: block;
                     overflow: hidden;
@@ -309,6 +309,7 @@
                     }
                     p{
                         color: $color4;
+                        font-size: 0.8rem;
                         font-family: $font3;
                         text-align: justify;
                     }
@@ -331,15 +332,28 @@
     #latest{
         .lp{
             .hts_prg{
-    
+            width: 90%;
+            height: auto;
                 .prgs{
                     flex-direction: column;
-    
+
                     .prg_img{
-                        width: 45vh;
-                        height: 30vh;
+                        width: 60%;
                     }
                     .prg_text{
+                        padding: 1rem;
+                        h4{
+                            color: $color5;
+                            font-family: $font2;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            color: $color4;
+                            font-size: 0.8rem;
+                            font-family: $font3;
+                            text-align: justify;
+                        }
                     }
                 }
             }

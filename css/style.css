@@ -836,7 +836,7 @@ footer #made_by {
 }
 
 #latest .lp .hts_prg {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -857,7 +857,7 @@ footer #made_by {
 
 #latest .lp .hts_prg .prgs .prg_img {
   margin: 1rem;
-  width: 20%;
+  width: 40%;
   height: 8rem;
   display: block;
   overflow: hidden;
@@ -897,6 +897,7 @@ footer #made_by {
 
 #latest .lp .hts_prg .prgs .prg_text p {
   color: #0f4392;
+  font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   text-align: justify;
 }
@@ -908,6 +909,10 @@ footer #made_by {
   #s1 #mission {
     width: 90%;
   }
+  #latest .lp .hts_prg {
+    width: 90%;
+    height: auto;
+  }
   #latest .lp .hts_prg .prgs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -915,8 +920,22 @@ footer #made_by {
             flex-direction: column;
   }
   #latest .lp .hts_prg .prgs .prg_img {
-    width: 45vh;
-    height: 30vh;
+    width: 60%;
+  }
+  #latest .lp .hts_prg .prgs .prg_text {
+    padding: 1rem;
+  }
+  #latest .lp .hts_prg .prgs .prg_text h4 {
+    color: #000249;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  #latest .lp .hts_prg .prgs .prg_text p {
+    color: #0f4392;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */
