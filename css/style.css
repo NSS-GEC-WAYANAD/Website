@@ -1026,8 +1026,8 @@ footer #made_by {
 }
 
 #highlights .img_boxes .h_box .hbh .h_view {
-  width: 40%;
-  height: 20%;
+  width: 30%;
+  height: 15%;
   background-color: #1d9bf0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,7 +1043,8 @@ footer #made_by {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #f5f9ff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
