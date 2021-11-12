@@ -417,36 +417,39 @@ footer #made_by {
             flex-direction: column;
     cursor: pointer;
     pointer-events: all;
-    width: 3rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
     position: absolute;
-    right: 1.5rem;
+    right: 2rem;
     top: 1rem;
+    overflow: visible;
     z-index: 5;
   }
   nav #hamburger .hamburger_line {
-    margin: auto;
-    height: 0.22rem;
-    width: 2.2em;
+    height: 0.2rem;
+    width: 2rem;
     background-color: #000249;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+  }
+  nav #hamburger .hamburger_line:nth-child(2) {
+    margin: 0.4rem;
   }
   nav #hamburger.open .hamburger_line {
     background-color: #f5f9ff;
   }
   nav #hamburger.open .hamburger_line:nth-child(1) {
     height: 0.2rem;
-    -webkit-transform: translateY(320%) rotate(45deg);
-            transform: translateY(320%) rotate(45deg);
+    -webkit-transform: translateY(310%) rotate(45deg);
+            transform: translateY(310%) rotate(45deg);
   }
   nav #hamburger.open .hamburger_line:nth-child(2) {
     background-color: transparent;
   }
   nav #hamburger.open .hamburger_line:nth-child(3) {
     height: 0.2rem;
-    -webkit-transform: translateY(-320%) rotate(-45deg);
-            transform: translateY(-320%) rotate(-45deg);
+    -webkit-transform: translateY(-310%) rotate(-45deg);
+            transform: translateY(-310%) rotate(-45deg);
   }
   nav #nav_bg.open {
     -webkit-transform: translateX(0);

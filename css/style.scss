@@ -351,18 +351,21 @@ footer{
             flex-direction: column;
             cursor: pointer;
             pointer-events: all;
-            width: 3rem;
-            height: 2rem;
+            width: 1.75rem;
+            height: 1.75rem;
             position: absolute;
-            right: 1.5rem;
+            right: 2rem;
             top: 1rem;
+            overflow: visible;
             z-index: 5;
             .hamburger_line{
-                margin: auto;
-                height: 0.22rem;
-                width: 2.2em;
+                height: 0.2rem;
+                width: 2rem;
                 background-color: $color5;
                 transition: all 0.5s ease-in-out;
+            }
+            .hamburger_line:nth-child(2){
+                margin: 0.4rem;
             }
         }
         #hamburger.open{
@@ -371,14 +374,14 @@ footer{
             }
             .hamburger_line:nth-child(1){
                 height: 0.2rem;
-                transform: translateY(320%) rotate(45deg);
+                transform: translateY(310%) rotate(45deg);
             }
             .hamburger_line:nth-child(2){
                 background-color: transparent;
             }
             .hamburger_line:nth-child(3){
                 height: 0.2rem;
-                transform: translateY(-320%) rotate(-45deg);
+                transform: translateY(-310%) rotate(-45deg);
             }
         }
         #nav_bg.open{
