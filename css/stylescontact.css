@@ -1,0 +1,49 @@
+h1{
+    font-size: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    color: #0F4392;
+}
+
+#boxes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+}
+@media (max-width: 800px) {
+    #boxes{
+      flex-direction: column;
+    }
+  }
+
+p{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    
+}
+.contactbox{
+    background-color:white;
+    height: auto;
+    width: 20rem;
+    border-radius: 2rem;
+    box-shadow: 1px 10px 5px #0F4392;
+    margin-bottom: 50px;
+    
+}
+body{
+    background: linear-gradient(
+        to bottom,
+        #F5F9FF 70%,
+        #F5F9FF 0%,
+        #0F4392 0%,
+        #0F4392 30%
+    );
+}
