@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 h1{
     font-size: 5vh;
     padding-top: 1vh;
     padding-bottom: 10vh;
     text-align: center;
-    color: #0F4392;
+    color: #000249;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #boxes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
-    padding: 10px 10px 10px 10px;
 }
 @media (max-width: 800px) {
     #boxes{
@@ -18,8 +20,11 @@ h1{
     }
   }
 
+
+
 p{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 img{
@@ -34,16 +39,15 @@ img{
     height: auto;
     width: 20rem;
     border-radius: 2rem;
-    box-shadow: 1px 10px 5px #0F4392;
+    box-shadow: 1px 10px 5px #000249;
     margin-bottom: 50px;
-    
 }
 body{
     background: linear-gradient(
         to bottom,
-        #F5F9FF 70%,
-        #F5F9FF 0%,
-        #0F4392 0%,
-        #0F4392 30%
+        #f8f9fa 60%,
+        #f8f9fa 0%,
+        #000249 0%,
+        #000249 40%
     );
 }
