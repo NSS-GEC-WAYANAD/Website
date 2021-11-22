@@ -1,0 +1,47 @@
+#s_contact{
+    width: 100%;
+    height: auto;
+    padding: 10rem 1rem;
+    h1{
+        font-size: 5vh;
+        padding-top: 1vh;
+        padding-bottom: 10vh;
+        text-align: center;
+        color: #000249;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #boxes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    @media (max-width: 800px) {
+        #boxes{
+        flex-direction: column;
+        }
+    }
+
+
+
+    p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+        
+    }
+    .contactbox{
+        background-color:white;
+        height: auto;
+        width: 20rem;
+        border-radius: 2rem;
+        box-shadow: 1px 10px 5px #000249;
+        margin-bottom: 50px;
+    }
+}
