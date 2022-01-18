@@ -685,7 +685,7 @@ footer #made_by {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 95%;
 }
 
 #s1 .about .about_us {
@@ -729,7 +729,7 @@ footer #made_by {
 
 #s1 #mav .mv-box {
   position: relative;
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem 2rem;
   background-color: rgba(29, 155, 240, 0.2);
   -webkit-box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004), 2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007), 4.4px 4.4px 10px rgba(0, 0, 0, 0.009), 7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011), 14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014), 35px 35px 80px rgba(0, 0, 0, 0.02);
