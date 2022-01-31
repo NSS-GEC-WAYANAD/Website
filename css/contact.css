@@ -1,0 +1,212 @@
+.ContactSection {
+  flex: 0 0 100%;
+  padding: 0 10%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.ContactSection .title {
+  margin: 0 auto;
+  font-size: 120px;
+  font-family: Merriweather Sans;
+  line-height: 1;
+  position: relative;
+  display: flex;
+  color: rgba(30, 37, 48, 0.07);
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.ContactSection .title .main {
+  z-index: 1;
+}
+.ContactSection .title .inTitle {
+  z-index: 0;
+  position: absolute;
+  font-size: 50px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactSection .title .inTitle span {
+  color: #332A64;
+}
+.ContactSection .contents {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.ContactSection .contents .contactDetail {
+  flex: 0 0 35%;
+}
+.ContactSection .contents .contactDetail .titleIn {
+  font-size: 24px;
+  font-weight: 600;
+}
+.ContactSection .contents .contactDetail .desc {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+.ContactSection .contents .contactDetail .item {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.ContactSection .contents .contactDetail .item .icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #332A64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ContactSection .contents .contactDetail .item .texts .label {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 300;
+}
+.ContactSection .contents .contactDetail .item .texts .value {
+  margin-top: 4px;
+  font-weight: 500;
+  color: #666;
+}
+.ContactSection .contents .contactForm {
+  flex: 0 0 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ContactSection .contents .contactForm .inpHalf,
+.ContactSection .contents .contactForm .inpFull {
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #4444;
+  padding: 0 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.ContactSection .contents .contactForm .inpHalf {
+  width: 0;
+  flex: 0 0 48%;
+}
+.ContactSection .contents .contactForm .inpFull {
+  width: 0;
+  flex: 0 0 100%;
+}
+.ContactSection .contents .contactForm .inpTextArea {
+  border-radius: 30px;
+  border: 1px solid #4444;
+  width: 0;
+  flex: 0 0 100%;
+  padding: 40px;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.ContactSection .contents .contactForm .button {
+  margin-top: 15px;
+  height: 60px;
+  border-radius: 30px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #332A64;
+  transition: all 400ms ease;
+}
+.ContactSection .contents .contactForm .button .btnText {
+  transition: all 400ms ease;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+.ContactSection .contents .contactForm .button .btnIcon {
+  height: 60px;
+  width: 60px;
+  background: #332A64;
+  padding: 20px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.ContactSection .contents .contactForm .button:hover {
+  background-color: #332A64;
+}
+.ContactSection .contents .contactForm .button:hover .btnText {
+  color: white;
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .ContactSection {
+    padding: 0 5%;
+    padding-top: 90px;
+  }
+  .ContactSection .title {
+    font-size: 65px;
+  }
+  .ContactSection .title .inTitle {
+    font-size: 30px;
+  }
+  .ContactSection .contents {
+    flex-direction: column;
+    padding: 0 8%;
+  }
+  .ContactSection .contents .contactDetail {
+    flex: unset;
+  }
+  .ContactSection .contents .contactDetail .titleIn {
+    font-size: 20px;
+  }
+  .ContactSection .contents .contactDetail .desc {
+    font-size: 14px;
+  }
+  .ContactSection .contents .contactDetail .item .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    min-width: 30px;
+  }
+  .ContactSection .contents .contactDetail .item .texts .label {
+    font-size: 14px;
+  }
+  .ContactSection .contents .contactDetail .item .texts .value {
+    font-size: 15px;
+  }
+  .ContactSection .contents .contactForm {
+    flex: unset;
+  }
+  .ContactSection .contents .contactForm .inpHalf,
+  .ContactSection .contents .contactForm .inpFull {
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    flex: 0 0 100%;
+  }
+  .ContactSection .contents .contactForm .inpHalf::placeholder,
+  .ContactSection .contents .contactForm .inpFull::placeholder {
+    font-size: 13px;
+  }
+  .ContactSection .contents .contactForm .inpTextArea {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 16px;
+    flex: 0 0 100%;
+  }
+  .ContactSection .contents .contactForm .inpTextArea::placeholder {
+    font-size: 13px;
+  }
+  .ContactSection .contents .contactForm .button {
+    flex: 0 0 100%;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+}
