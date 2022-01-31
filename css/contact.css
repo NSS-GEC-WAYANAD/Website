@@ -34,7 +34,7 @@
   align-items: center;
 }
 .ContactSection .title .inTitle span {
-  color: #332A64;
+  color: #0F4392;
 }
 .ContactSection .contents {
   padding: 0 10%;
@@ -64,7 +64,7 @@
   min-width: 40px;
   border-radius: 50%;
   margin-right: 20px;
-  background-color: #332A64;
+  background-color: #0F4392;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  border: 1px solid #332A64;
+  border: 1px solid #0F4392;
   transition: all 400ms ease;
 }
 .ContactSection .contents .contactForm .button .btnText {
@@ -133,13 +133,13 @@
 .ContactSection .contents .contactForm .button .btnIcon {
   height: 60px;
   width: 60px;
-  background: #332A64;
+  background: #0F4392;
   padding: 20px;
   border-radius: 50%;
   margin-left: 20px;
 }
 .ContactSection .contents .contactForm .button:hover {
-  background-color: #332A64;
+  background-color: #0F4392;
 }
 .ContactSection .contents .contactForm .button:hover .btnText {
   color: white;
