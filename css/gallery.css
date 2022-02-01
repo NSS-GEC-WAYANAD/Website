@@ -6,7 +6,12 @@
   margin: 0 auto;
 }
 .m-p-g__thumbs-img {
-  margin: 0;
+  width:400px;
+  height:400px;
+  object-fit:cover;
+  padding: .75%;
+  margin-left:auto;
+  margin-right:auto;
   float: left;
   vertical-align: bottom;
   cursor: pointer;
@@ -160,7 +165,7 @@
 }
 /* DEMO */
 body {
-  background: #fefefe;
+  background: #fefefe ;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -193,4 +198,15 @@ h2 {
     min-width: 0;
     font-size: 14px;
   }
+}
+
+footer {
+  position: relative;
+  background: #ffffff;
+  min-height: 10rem;
+  
+}
+
+footer #footerbox {
+  background-color: #000249;
 }
