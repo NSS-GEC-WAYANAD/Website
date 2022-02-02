@@ -116,10 +116,11 @@ nav #logo #logo_text p {
 }
 
 nav #nav_links {
+  display: flex;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  text-size-adjust: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -127,6 +128,7 @@ nav #nav_links {
       -ms-flex-align: baseline;
           align-items: baseline;
   height: 1rem;
+  
 }
 
 nav #nav_links li {
@@ -143,6 +145,7 @@ nav #nav_links li {
   list-style: none;
   text-decoration: none;
   padding: 0rem 1.5rem;
+  margin-right: 1px;
 }
 
 nav #nav_links li .nav-active {
