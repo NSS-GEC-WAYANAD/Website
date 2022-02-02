@@ -102,10 +102,11 @@ nav #logo #nss_logo {
 nav #logo #logo_text {
   margin: 0rem 0.5rem;
   width: auto;
+  text-align: left;
 }
 
 nav #logo #logo_text h1 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #272727;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -192,6 +193,9 @@ footer {
   position: relative;
   background: #000249;
   min-height: 10rem;
+  
+  
+ 
   /*
     #copyright{
         text-align: center;
