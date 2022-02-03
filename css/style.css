@@ -145,7 +145,6 @@ nav #nav_links li {
   list-style: none;
   text-decoration: none;
   padding: 0rem 1.5rem;
-  margin-right: 1px;
 }
 
 nav #nav_links li .nav-active {
@@ -1168,3 +1167,8 @@ footer #made_by {
   margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+footer .sm {
+  align-items: center !important;
+}
