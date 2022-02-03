@@ -729,7 +729,8 @@ footer #made_by {
 }
 
 #s1 #mav .svg-mv {
-  width: 13rem;
+  width: 11rem;
+  min-width: 11rem;
   height: auto;
 }
 
@@ -740,8 +741,8 @@ footer #made_by {
   background-color: rgba(29, 155, 240, 0.2);
   -webkit-box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004), 2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007), 4.4px 4.4px 10px rgba(0, 0, 0, 0.009), 7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011), 14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014), 35px 35px 80px rgba(0, 0, 0, 0.02);
           box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004), 2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007), 4.4px 4.4px 10px rgba(0, 0, 0, 0.009), 7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011), 14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014), 35px 35px 80px rgba(0, 0, 0, 0.02);
+  margin-bottom: 30px;
 }
-
 #s1 #mav .mv-box::before {
   content: '';
   display: block;
