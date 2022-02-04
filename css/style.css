@@ -96,10 +96,11 @@ nav #logo #nss_logo {
 nav #logo #logo_text {
   margin: 0rem 0.5rem;
   width: auto;
+   text-align: left;
 }
 
 nav #logo #logo_text h1 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #272727;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -115,10 +116,11 @@ nav #logo #logo_text p {
 }
 
 nav #nav_links {
+  display: flex;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  text-size-adjust: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -126,6 +128,7 @@ nav #nav_links {
       -ms-flex-align: baseline;
           align-items: baseline;
   height: 1rem;
+  
 }
 
 nav #nav_links li {
@@ -186,6 +189,9 @@ footer {
   position: relative;
   background: #000249;
   min-height: 10rem;
+  padding-b;
+  
+ 
   /*
     #copyright{
         text-align: center;
@@ -723,7 +729,8 @@ footer #made_by {
 }
 
 #s1 #mav .svg-mv {
-  width: 13rem;
+  width: 11rem;
+  min-width: 11rem;
   height: auto;
 }
 
@@ -734,8 +741,8 @@ footer #made_by {
   background-color: rgba(29, 155, 240, 0.2);
   -webkit-box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004), 2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007), 4.4px 4.4px 10px rgba(0, 0, 0, 0.009), 7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011), 14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014), 35px 35px 80px rgba(0, 0, 0, 0.02);
           box-shadow: 1px 1px 2.2px rgba(0, 0, 0, 0.004), 2.3px 2.3px 5.3px rgba(0, 0, 0, 0.007), 4.4px 4.4px 10px rgba(0, 0, 0, 0.009), 7.8px 7.8px 17.9px rgba(0, 0, 0, 0.011), 14.6px 14.6px 33.4px rgba(0, 0, 0, 0.014), 35px 35px 80px rgba(0, 0, 0, 0.02);
+  margin-bottom: 30px;
 }
-
 #s1 #mav .mv-box::before {
   content: '';
   display: block;
@@ -1161,3 +1168,4 @@ footer #made_by {
   margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
+

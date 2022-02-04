@@ -3,10 +3,14 @@
  \*------------------------------------*/
 .m-p-g {
   max-width: 100%;
-  margin: 0 auto;
+  display: grid;
 }
 .m-p-g__thumbs-img {
-  margin: 0;
+  width:400px;
+  height:400px;
+  object-fit:cover;
+  padding: .75%;
+  margin-right: none !;
   float: left;
   vertical-align: bottom;
   cursor: pointer;
@@ -17,6 +21,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   will-change: opacity, transform;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
 }
 .m-p-g__thumbs-img.active {
   z-index: 50;
@@ -160,7 +165,7 @@
 }
 /* DEMO */
 body {
-  background: #fefefe;
+  background: #fefefe ;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -194,3 +199,17 @@ h2 {
     font-size: 14px;
   }
 }
+
+footer {
+  position: relative;
+  background: #ffffff;
+  min-height: 10rem;
+  
+}
+
+footer #footerbox {
+  background-color: #000249;
+  font-family: "Poppins", sans-serif;
+}
+
+
