@@ -52,6 +52,7 @@ html {
 
 body {
   background-color: #f5f9ff;
+  overflow-x: hidden;
 }
 
 nav {
@@ -189,7 +190,6 @@ footer {
   position: relative;
   background: #000249;
   min-height: 10rem;
-  padding-b;
   
  
   /*
