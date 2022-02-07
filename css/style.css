@@ -52,6 +52,7 @@ html {
 
 body {
   background-color: #f5f9ff;
+  overflow-x: hidden;
 }
 
 nav {
