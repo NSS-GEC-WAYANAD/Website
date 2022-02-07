@@ -805,6 +805,7 @@ footer #made_by {
 }
 
 #latest {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,11 +868,11 @@ footer #made_by {
 }
 
 #latest .lp .hts_prg .prgs .prg_img {
-  margin: 1rem;
-  width: 40%;
-  height: 8rem;
+  width:150px;
+  height:120px;
+  object-fit:cover;
   display: block;
-  overflow: hidden;
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,6 +898,7 @@ footer #made_by {
 
 #latest .lp .hts_prg .prgs .prg_text {
   padding: 1rem;
+ 
 }
 
 #latest .lp .hts_prg .prgs .prg_text h4 {
