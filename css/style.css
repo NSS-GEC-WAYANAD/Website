@@ -868,6 +868,7 @@ footer #made_by {
 }
 
 #latest .lp .hts_prg .prgs .prg_img {
+  
   width:150px;
   height:120px;
   object-fit:cover;
@@ -1009,6 +1010,7 @@ footer #made_by {
   width: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-top: 1.34rem;
 }
 
 #highlights .img_boxes .h_box .hbh {
@@ -1092,6 +1094,7 @@ footer #made_by {
             flex-direction: column;
   }
   #latest .lp .hts_prg .prgs .prg_img {
+    margin-top: 1.5rem;
     width: 60%;
   }
   #latest .lp .hts_prg .prgs .prg_text {
