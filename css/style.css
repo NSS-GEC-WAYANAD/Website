@@ -1010,6 +1010,7 @@ footer #made_by {
   width: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-top: 1.34rem;
 }
 
 #highlights .img_boxes .h_box .hbh {
